@@ -1,1 +1,30 @@
+nav {
+  height: 100px;
+  padding: 0 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  border-bottom: solid 1px #e8e8e8;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+}
 
+nav .brand {
+  font-weight: bold !important;
+  font-size: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #e3350d;
+  cursor: pointer;
+}
+
+img {
+  height: 50px !important;
+  margin-right: 8px;
+}
