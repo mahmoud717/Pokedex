@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="App">
+      <div className="App m-0">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/pokemons" element={<PokemonsContainer />} />

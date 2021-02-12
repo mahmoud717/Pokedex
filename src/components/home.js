@@ -5,7 +5,7 @@ const Home = () => (
   <div className="d-flex justify-content-center align-items-center ">
     <div className="homepage-text ">
       <h1>
-        Welcome to pokedex
+        Welcome to Pokedex
       </h1>
       <p>
         A place where you can find all information

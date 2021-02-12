@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import pokedex from '../assets/img/Pokeball.png';
 
 const Navbar = () => (
-  <nav className="navbar color-white ">
+  <nav className="navbar color-white mb-0 ">
     <div className="container-fluid">
       <div className="d-flex align-items-center nav-left">
         <img src={pokedex} alt="" className="mr-5" />

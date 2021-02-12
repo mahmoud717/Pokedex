@@ -15,6 +15,7 @@ const PokemonsContainer = ({
 }) => {
   useEffect(() => {
     fetchPokemons(`https://pokeapi.co/api/v2/pokemon?offset=${paginationData.start}&limit=${paginationData.limit}`);
+    console.log(paginationData.limit);
   }, [paginationData.start]);
 
   const handleClick = e => {
@@ -30,23 +31,27 @@ const PokemonsContainer = ({
   ) : pokemonsData.error ? (
     <h2 className="error">{pokemonsData.error}</h2>
   ) : (
-    <div className="pokemon-container container my-3 d-flex flex-column align-items-center">
-      <div className="pokemon-list d-flex row justify-content-between ">
-        {pokemonsData && pokemonsData.pokemons.results && pokemonsData.pokemons.results.map((pokemon, id) => (
-          <div className="pokemon-card justify-content-center d-flex flex-column align-items-center col-4 ">
-            <Link to={`/pokemons/${(id + paginationData.start + 1)}`}>
+    <div className="container-fluid m-0 p-0 yellow">
+      <div className="pokemon-container container mb-0 p-5 d-flex flex-column align-items-center">
+        <div className="pokemon-list d-flex row justify-content-between ">
+          {pokemonsData && pokemonsData.pokemons.results && pokemonsData.pokemons.results.map((pokemon, id) => (
+            <div className=" col-4">
+              <div className="pokemon-card justify-content-center d-flex flex-column align-items-center ">
+                <Link to={`/pokemons/${(id + paginationData.start + 1)}`}>
 
-              <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id + paginationData.start + 1}.png`} alt="" loading="lazy" />
-              <p className="text-center">{pokemon.name}</p>
-            </Link>
-          </div>
+                  <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id + paginationData.start + 1}.png`} alt="" loading="lazy" />
+                  <p className="text-center">{pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}</p>
+                </Link>
+              </div>
+            </div>
 
-        ))}
+          ))}
 
-      </div>
-      <div>
-        <button className="btn btn-secondary previous mr-4" type="button" onClick={handleClick}>previous</button>
-        <button className="btn btn-success next m-3" type="button" onClick={handleClick}>next</button>
+        </div>
+        <div>
+          <button className="btn btn-secondary previous mr-4" type="button" onClick={handleClick}>previous</button>
+          <button className="btn btn-success next m-3" type="button" onClick={handleClick}>next</button>
+        </div>
       </div>
     </div>
 

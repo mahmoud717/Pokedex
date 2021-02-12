@@ -1,5 +1,9 @@
+import notFound from '../assets/img/404.png';
+
 const NotFound = () => (
-  <div className="about">404</div>
+  <div className="not-found d-flex container justify-content-center align-items-center">
+    <img src={notFound} alt="404" />
+  </div>
 );
 
 export default NotFound;

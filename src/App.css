@@ -31,7 +31,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-img {
+nav img {
   height: 50px !important;
   margin-right: 8px;
 }
@@ -54,11 +54,49 @@ img {
 }
 
 .pokemon-card {
+  background-color: #f2f2f296;
+  border-radius: 10px;
+  margin: 15px 0;
+}
 
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.2s ease-in-out;
 }
 
 .pokemon-card img {
   width: auto;
   object-fit: cover;
   height: 230px !important;
+}
+
+.pokemon-card a {
+  font-size: 25px;
+  text-decoration: none !important;
+  padding: 15px 0 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #313131;
+}
+
+.not-found {
+
+}
+
+.not-found img {
+  margin-top: 100px;
+  height: 400px !important;
+}
+
+img.pokemon-logo {
+  height: 150px;
+}
+
+.pokemon-text {
+  margin-left: 150px;
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pokemon-text h1 {
+  font-size: 50px;
 }

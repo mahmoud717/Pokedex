@@ -9,7 +9,9 @@ const PaginationReducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_PAGINATION:
       return {
+        ...state,
         start: action.payload,
+
       };
     default: return state;
   }
