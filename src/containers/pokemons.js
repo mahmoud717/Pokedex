@@ -15,7 +15,6 @@ const PokemonsContainer = ({
 }) => {
   useEffect(() => {
     fetchPokemons(`https://pokeapi.co/api/v2/pokemon?offset=${paginationData.start}&limit=${paginationData.limit}`);
-    console.log(paginationData.limit);
   }, [paginationData.start]);
 
   const handleClick = e => {

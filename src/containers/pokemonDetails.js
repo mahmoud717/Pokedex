@@ -16,8 +16,6 @@ const PokemonsDetails = ({ fetchPokemon, pokemonData }) => {
     fetchPokemon(`https://pokeapi.co/api/v2/pokemon/${id}`);
   }, []);
 
-  console.log(pokemonData);
-
   return pokemonData.loading ? (
     <h2>loading</h2>
   ) : pokemonData.error ? (

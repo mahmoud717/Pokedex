@@ -26,6 +26,14 @@ nav a {
   font-size: 20px;
 }
 
+.pokemon-card a {
+  font-size: 25px;
+  text-decoration: none !important;
+  padding: 15px 0 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #313131;
+}
+
 nav a:hover {
   color: #e3350d;
   cursor: pointer;
@@ -68,18 +76,6 @@ nav img {
   width: auto;
   object-fit: cover;
   height: 230px !important;
-}
-
-.pokemon-card a {
-  font-size: 25px;
-  text-decoration: none !important;
-  padding: 15px 0 25px;
-  font-family: 'Open Sans', sans-serif;
-  color: #313131;
-}
-
-.not-found {
-
 }
 
 .not-found img {
