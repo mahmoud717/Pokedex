@@ -14,6 +14,7 @@ const PokemonReducer = (state = initialState, action) => {
         loading: true,
       };
     case FETCH_POKEMON_SUCCESS:
+
       return {
         loading: false,
         pokemons: action.payload,

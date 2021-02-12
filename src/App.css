@@ -19,6 +19,13 @@ nav a {
   font-size: 20px;
 }
 
+.homepage-text a {
+  border-radius: 50px !important;
+  margin-bottom: 100px !important;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
 nav a:hover {
   color: #e3350d;
   cursor: pointer;
@@ -27,4 +34,31 @@ nav a:hover {
 img {
   height: 50px !important;
   margin-right: 8px;
+}
+
+.homepage-background {
+  height: 800px !important;
+}
+
+.homepage-text {
+  margin-right: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homepage-text h1 {
+  font-size: 55px;
+}
+
+.homepage-text p {
+  font-size: 30px;
+}
+
+.pokemon-card {
+
+}
+
+.pokemon-card img {
+  width: auto;
+  object-fit: cover;
+  height: 230px !important;
 }

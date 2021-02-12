@@ -7,7 +7,7 @@ const Navbar = () => (
     <div className="container-fluid">
       <div className="d-flex align-items-center nav-left">
         <img src={pokedex} alt="" className="mr-5" />
-        <a className="mb-0 brand">Pokédex</a>
+        <Link to="/" className="mb-0 brand">Pokédex</Link>
       </div>
       <div className="nav-right ">
         <Link to="/">
