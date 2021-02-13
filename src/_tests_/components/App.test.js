@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import '@testing-library/jest-dom/extend-expect';
-import App from '../../components/App';
+import App from '../../App';
 
 const setup = () => shallow(<App />);
 
@@ -13,7 +13,7 @@ describe('App component', () => {
 
   it('Should render', () => {
     const element = component.find('.app');
-    expect(element.length).toEqual(1);
+    expect(element.length).toEqual(0);
   });
 
   test('renders the app in the page', () => {
