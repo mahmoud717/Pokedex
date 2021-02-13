@@ -96,3 +96,16 @@ img.pokemon-logo {
 .pokemon-text h1 {
   font-size: 50px;
 }
+
+.search-input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(231, 231, 231);
+  margin: 20px 2px;
+}
+
+.search-input:focus {
+  outline: none;
+}
