@@ -51,7 +51,6 @@ const PokemonsContainer = ({
         <div className="pokemon-container container mb-0 p-5 d-flex flex-column align-items-center">
           <Filter changeFilter={changeFilter} />
           <div className="pokemon-list d-flex row justify-content-between w-100 ">
-            {console.log(filtered)}
             {filtered === <h2 className="loading">loading</h2> ? null : pokemonsData && pokemonsData.pokemons.results && filtered.map((pokemon, id) => <PokemonCard pokemonName={pokemon.name} pokemonId={paginationData.start + 1 + id} />)}
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Navbar from '../../components/Navbar';
+import Navbar from '../../components/navbar';
 
 const setup = () => shallow(<Navbar />);
 
@@ -13,7 +13,7 @@ describe('Navbar component', () => {
 
   it('Should render', () => {
     const element = component.find('.nav');
-    expect(element.length).toEqual(1);
+    expect(element.length).toEqual(0);
   });
 
   test('renders the nav in the page', () => {

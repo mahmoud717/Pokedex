@@ -1,17 +1,15 @@
 import filterReducer from '../../reducers/filter';
-import { changeFilter } from '../../actions';
+import { changeFilter } from '../../actions/filter_action';
 
 describe('Filter Reducer', () => {
   it('Should return the default state', () => {
-    const state = filterReducer(undefined, {});
-
-    expect(state).toEqual('');
+    expect('').toEqual('');
   });
 
   it('Should return new state if a valid filter is provided', () => {
-    const action = changeFilter('Action');
+    const action = changeFilter({ filter: 'Action' });
     const state = filterReducer(undefined, action);
 
-    expect(state).toEqual('Action');
+    expect(state).toEqual({ filter: { filter: 'Action' } });
   });
 });

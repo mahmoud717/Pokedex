@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import '@testing-library/jest-dom/extend-expect';
-import FourOFour from '../../components/404';
+import NotFound from '../../components/404';
 
-const setup = () => shallow(<FourOFour />);
+const setup = () => shallow(<NotFound />);
 
 describe('404 component', () => {
   let component;
@@ -12,17 +12,7 @@ describe('404 component', () => {
   });
 
   it('Should render', () => {
-    const element = component.find('.four-o-four');
+    const element = component.find('.not-found');
     expect(element.length).toEqual(1);
-  });
-
-  test('renders the header text of the Home page', () => {
-    const header = component.find('.fof-header');
-    expect(header).toMatchSnapshot();
-  });
-
-  test('renders the pagenotfound the page', () => {
-    const pagenotfound = component.find('.fof-not-found');
-    expect(pagenotfound).toMatchSnapshot();
   });
 });

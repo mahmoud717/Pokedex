@@ -7,7 +7,6 @@ const filter = ({ changeFilter }) => (
     placeholder="Search"
     onChange={e => {
       changeFilter(e.target.value);
-      console.log(e.target.value);
     }}
     className="search-input"
   />
