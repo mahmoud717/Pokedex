@@ -31,11 +31,6 @@ const PokemonsContainer = ({
     }
   };
 
-  // const handleFilter = filter => {
-  //   console.log(filterData);
-  //   changeFilter(filter);
-  // };
-
   if (pokemonsData.loading || !pokemonsData.pokemons.results) {
     return <h2 className="loading">loading</h2>;
   }
