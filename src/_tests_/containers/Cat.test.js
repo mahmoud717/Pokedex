@@ -25,7 +25,7 @@ describe('Pokemons container', () => {
   });
 
   it('Should render', () => {
-    const element = component.wincludes('button-cat');
+    const element = component.includes('button-cat');
     expect(element).toBeTruthy;
   });
 });

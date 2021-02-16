@@ -1,20 +1,15 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable array-callback-return */
 /* eslint-disable consistent-return */
-/* eslint-disable quotes */
-/* eslint-disable react/jsx-curly-brace-presence */
-/* eslint-disable react/jsx-key */
 /* eslint-disable max-len */
-/* eslint-disable no-nested-ternary */
 import PropTypes from 'prop-types';
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-// import { Link } from 'react-router-dom';
 import { fetchPokemons } from '../actions/pokemon_actions';
-import changePagination from "../actions/pagination_actions";
+import changePagination from '../actions/pagination_actions';
 import { changeFilter } from '../actions/filter_action';
-import Filter from "../components/filter";
-import PokemonCard from "../components/pokemonCard";
+import Filter from '../components/filter';
+import PokemonCard from './pokemonCard';
 
 const PokemonsContainer = ({
   fetchPokemons, pokemonsData, changePagination, paginationData, filterData, changeFilter,
@@ -24,12 +19,14 @@ const PokemonsContainer = ({
   }, [paginationData.start, filterData]);
 
   const handleClick = e => {
-    if (e.target.className.includes("next")) {
+    if (e.target.className.includes('next')) {
       changePagination(paginationData.start + 30);
-    } else if (e.target.className.includes("previous") && paginationData.start > 0) {
+    } else if (e.target.className.includes('previous') && paginationData.start > 0) {
       changePagination(paginationData.start - 30);
     }
   };
+
+  const renderPokemon = pokemon => <PokemonCard pokemonName={pokemon.name} pokemonUrl={pokemon.url} />;
 
   if (pokemonsData.loading || !pokemonsData.pokemons.results) {
     return <h2 className="loading">loading</h2>;
@@ -39,14 +36,14 @@ const PokemonsContainer = ({
     return <h2 className="error">{pokemonsData.error}</h2>;
   }
   if (pokemonsData.pokemons.results) {
-    const filtered = (filterData === "" ? pokemonsData.pokemons.results : pokemonsData.pokemons.results.filter(pokemon => pokemon.name.includes(filterData)));
+    const filtered = (filterData === '' ? pokemonsData.pokemons.results : pokemonsData.pokemons.results.filter(pokemon => pokemon.name.includes(filterData)));
 
     return (
       <div className="container-fluid m-0 p-0 yellow">
         <div className="pokemon-container container mb-0 p-5 d-flex flex-column align-items-center">
           <Filter changeFilter={changeFilter} />
           <div className="pokemon-list d-flex row justify-content-between w-100 ">
-            {filtered === <h2 className="loading">loading</h2> ? null : pokemonsData && pokemonsData.pokemons.results && filtered.map((pokemon, id) => <PokemonCard pokemonName={pokemon.name} pokemonId={paginationData.start + 1 + id} />)}
+            {filtered === <h2 className="loading">loading</h2> ? null : pokemonsData && pokemonsData.pokemons.results && filtered.map(renderPokemon)}
           </div>
 
           <div>
