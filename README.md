@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Pokedex
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is an index for pokemons, from the pokeAPI, which developed using React. Here I have practiced the basics of React, like,
 
-## Available Scripts
+- Props and States,
+- component,
+- Life-cycle methods,
+- Hooks,
+- Routers,
+- Styling the React app,
+- Testing React components.
+- Redux-toolkit.
 
-In the project directory, you can run:
+## `Build-With:`
 
-### `yarn start`
+- PokeAPI
+- React-virtual DOM concepts
+- VScode
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## `Live Demo:`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[Pokedex](<https://pokedex-v3.netlify.app/>
 
-### `yarn test`
+## `Project presentations:`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[video explanation](https://www.loom.com/share/944964f451d94a7ebc786ad1d70660f1)
 
-### `yarn build`
+# Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Prerequisites`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get this project up and running locally, "npm install" is needed to be run in order to include all dependencies used for this project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**To get this project set up on your local machine, follow these simple steps:**
 
-### `yarn eject`
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Copy and paste the following code into the Terminal: git clone `https://github.com/mahmoud717/Pokedex/tree/pokedex`.
+4. Into the Terminal: run `cd pokedex`.
+5. Into the Terminal: run `npm install`.
+6. Into the Terminal: run `npm start`.
+7. To see the website in the browser, open browser and load `localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**To run the test suits:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Into the Terminal: run `npm test`.
+2. Press `a` to run all tests.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Authors
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Mahmoud Mohammad**
 
-## Learn More
+- GitHub: [@Mahmoud717](https://github.com/mahmoud717)
+- LinkedIn: [Mahmoud-M-Abbas](https://linkedin.com/in/Mahmoud-m-abbas)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## `Show your support:`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Give ⭐ Star me on GitHub — it helps!
 
-### Code Splitting
+## 📝 `License`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is [MIT](lic.url) licensed.
