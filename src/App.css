@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+nav {
+  height: 100px;
+  padding: 0 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  border-bottom: solid 1px #e8e8e8;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav .brand {
+  font-weight: bold !important;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homepage-text a {
+  border-radius: 50px !important;
+  margin-bottom: 100px !important;
+  padding: 10px 15px;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-card a {
+  font-size: 25px;
+  text-decoration: none !important;
+  padding: 15px 0 25px;
+  font-family: 'Open Sans', sans-serif;
+  color: #313131;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a:hover {
+  color: #e3350d;
+  cursor: pointer;
+}
+
+nav img {
+  height: 50px !important;
+  margin-right: 8px;
+}
+
+.homepage-background {
+  height: 800px !important;
+}
+
+.homepage-text {
+  margin-right: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homepage-text h1 {
+  font-size: 55px;
+}
+
+.homepage-text p {
+  font-size: 30px;
+}
+
+.pokemon-card {
+  background-color: #f2f2f296;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.pokemon-card img {
+  width: auto;
+  object-fit: cover;
+  height: 230px !important;
+}
+
+.not-found img {
+  margin-top: 100px;
+  height: 400px !important;
+}
+
+img.pokemon-logo {
+  height: 150px;
+}
+
+.pokemon-text {
+  margin-left: 150px;
+  margin-top: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.pokemon-text h1 {
+  font-size: 50px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(231, 231, 231);
+  margin: 20px 2px;
+}
+
+.search-input:focus {
+  outline: none;
 }
