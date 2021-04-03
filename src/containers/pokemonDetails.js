@@ -1,11 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 /* eslint-disable consistent-return */
-/* eslint-disable quotes */
-/* eslint-disable react/jsx-curly-brace-presence */
-/* eslint-disable react/jsx-key */
 /* eslint-disable max-len */
 
-/* eslint-disable no-nested-ternary */
 import { useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
